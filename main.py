@@ -7,9 +7,9 @@ def main(stdscr):
     curses.init_pair(3, curses.COLOR_WHITE, curses.COLOR_BLACK)
 
     stdscr.clear()
-    stdscr.addstr("Hello World")
+    stdscr.addstr(0, 0, "Hello World")
     stdscr.refresh()
     key = stdscr.getkey()
     print(key)
-    
+
 wrapper(main)
